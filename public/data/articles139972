@@ -1,0 +1,19 @@
+{
+    "message":"OK",
+    "data":{
+       "art_id":139972,
+       "title":"Scala\u4e2dfoldLeft\u7684\u7b80\u5355\u4f7f\u7528\u603b\u7ed3",
+       "pubdate":"2018-11-29T17:17:48",
+       "content":"<div id=\"content_views\" class=\"markdown_views prism-atom-one-dark\">\n\t\t\t\t\t\t\t<!-- flowchart \u7bad\u5934\u56fe\u6807 \u52ff\u5220 -->\n\t\t\t\t\t\t\t<svg xmlns=\"http://www.w3.org/2000/svg\" style=\"display: none;\"><path stroke-linecap=\"round\" d=\"M5,0 0,2.5 5,5z\" id=\"raphael-marker-block\" style=\"-webkit-tap-highlight-color: rgba(0, 0, 0, 0);\"/></svg>\n\t\t\t\t\t\t\t<h1><a id=\"ScalafoldLeft_2\"/>Scala\u4e2dfoldLeft\u7684\u7b80\u5355\u4f7f\u7528\u603b\u7ed3</h1>\n<p>\u7531\u4e8e\u5de5\u4f5c\u9700\u8981\uff0c\u535a\u4e3b\u5728\u5199spark\u76f8\u5173\u4e1a\u52a1\u4ee3\u7801\u65f6\u7528\u5230foldLeft\uff0c\u7ecf\u8fc7\u4e00\u756a\u641c\u5bfb\u53d1\u73b0\u5f88\u591a\u6587\u7ae0\u5bf9\u8fd9\u4e2a\u51fd\u6570\u7684\u8bb2\u89e3\uff0c\u4e8e\u521d\u5b66\u8005\u6765\u8bf4\u4e0d\u597d\u7406\u89e3\uff0c\u7279\u6b64\u6211\u6765\u505a\u4e2a\u7b80\u5355\u6613\u61c2\u7684\u5206\u6790\u603b\u7ed3\uff0c\u4f9b\u5927\u5bb6\u53c2\u8003\u3002<br/>\n\u82e5\u53d1\u73b0\u7406\u89e3\u4e0a\u7684\u504f\u5dee\uff0c\u8fd8\u8bf7\u591a\u6307\u6559\u3002</p>\n<h2><a id=\"_7\"/>\u6e90\u7801\u5206\u6790</h2>\n<p>def seq: TraversableOnce[A]<br/>\n<img src=\"https://img-blog.csdnimg.cn/20181124120058694.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI5Njc3MDgz,size_16,color_FFFFFF,t_70\" alt=\"scala.collection.TraversableOnce\"/></p>\n<p>\u4e0a\u9762\u4e24\u6bb5\u4ee3\u7801\u662fscala.collection.TraversableOnce\u7279\u8d28\u7684foldLeft\u65b9\u6cd5\u6e90\u4ee3\u7801,\u5b9e\u73b0\u4e86TraversableOnce trait\u7684seq\u5c31\u662f\u53ef\u8fed\u4ee3\u7684\u96c6\u5408\uff1b</p>\n<pre><code>    //\u5c06\u521d\u59cb\u503cz\u8d4b\u7ed9result\u53d8\u91cf\n    var result = z\n    //\u904d\u5386seq\u96c6\u5408\uff0c\u5c06result\u53d8\u91cf\u4e0eseq\u96c6\u5408\u53d6\u51fa\u7684\u6bcf\u4e2a\u5bf9\u8c61\u4f5c\u4e3a\u53c2\u6570\u4f20\u9012\u7ed9op\u51fd\u6570\uff0c\u6bcf\u8fed\u4ee3\u4e00\u6b21op\u51fd\u6570\u7684\u8fd4\u56de\u503c\u90fd\u8d4b\u7ed9result\u53d8\u91cf\n    this.seq foreach (x =&gt; result = op(result, x))  \n    //\u6700\u7ec8\u83b7\u53d6result\u4f5c\u4e3a\u8fd4\u56de\u503c\n    result\n</code></pre>\n<h2><a id=\"_22\"/>\u793a\u4f8b</h2>\n<pre><code>    val lst = List(20,30,60,90)\n    //0\u4e3a\u521d\u59cb\u503c\uff0cb\u8868\u793a\u8fd4\u56de\u7ed3\u679c\u5bf9\u8c61\uff08\u8fed\u4ee3\u503c\uff09\uff0ca\u8868\u793alst\u96c6\u5408\u4e2d\u7684\u6bcf\u4e2a\u503c\n    val rs = lst.foldLeft(0)((b,a)=&gt;{\n      b+a\n    })\n</code></pre>\n<p>\u8fd0\u884c\u8fc7\u7a0b\u4e3a\uff1ab=0+a\uff0c\u53730+20=20<br/>\nb=20+a\uff0c\u537320+30=50<br/>\nb=50+a\uff0c\u537350+60=110<br/>\nb=110+a\uff0c\u5373110+90=200<br/>\n\u6b64\u5904\u7684a\u4e3a\u5faa\u73af\u53d6\u51fa\u96c6\u5408\u4e2d\u7684\u503c<br/>\n\u6700\u7ec8\u7ed3\u679c:\t  rs=200</p>\n\n            </div>\n\t\t\t\t\t\t<link href=\"https://csdnimg.cn/release/phoenix/mdeditor/markdown_views-2787195726.css\" rel=\"stylesheet\"/>",
+       "aut_id":1,
+       "ch_id":11,
+       "aut_name":"\u6709\u70b9666",
+       "aut_photo":"http://toutiao-img.itheima.net/Ftb-E6bXjx1HlnJHPhe5N6E_seaI",
+       "is_followed":false,
+       "attitude":null,
+       "is_collected":false,
+       "recomments":[
+          
+       ]
+    }
+ }

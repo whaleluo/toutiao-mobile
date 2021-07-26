@@ -1,0 +1,31 @@
+{
+   "message":"OK",
+   "data":{
+      "channels":[
+         {
+            "id":2,
+            "name":"\u5f00\u53d1\u8005\u8d44\u8baf"
+         },
+         {
+            "id":3,
+            "name":"ios"
+         },
+         {
+            "id":4,
+            "name":"c++"
+         },
+         {
+            "id":5,
+            "name":"android"
+         },
+         {
+            "id":6,
+            "name":"css"
+         },
+         {
+            "id":8,
+            "name":"\u533a\u5757\u94fe"
+         }
+      ]
+   }
+}
